@@ -1,0 +1,14 @@
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreBusinessObject\bin\Debug\net8.0\ConvenienceStoreBusinessObject.deps.json
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreBusinessObject\bin\Debug\net8.0\ConvenienceStoreBusinessObject.runtimeconfig.json
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreBusinessObject\bin\Debug\net8.0\ConvenienceStoreBusinessObject.dll
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreBusinessObject\bin\Debug\net8.0\ConvenienceStoreBusinessObject.pdb
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreBusinessObject\obj\Debug\net8.0\ConvenienceStoreBusinessObject.csproj.AssemblyReference.cache
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreBusinessObject\obj\Debug\net8.0\ConvenienceStoreBusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreBusinessObject\obj\Debug\net8.0\ConvenienceStoreBusinessObject.AssemblyInfoInputs.cache
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreBusinessObject\obj\Debug\net8.0\ConvenienceStoreBusinessObject.AssemblyInfo.cs
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreBusinessObject\obj\Debug\net8.0\ConvenienceStoreBusinessObject.csproj.CoreCompileInputs.cache
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreBusinessObject\obj\Debug\net8.0\ConvenienceStoreBusinessObject.dll
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreBusinessObject\obj\Debug\net8.0\refint\ConvenienceStoreBusinessObject.dll
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreBusinessObject\obj\Debug\net8.0\ConvenienceStoreBusinessObject.pdb
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreBusinessObject\obj\Debug\net8.0\ConvenienceStoreBusinessObject.genruntimeconfig.cache
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreBusinessObject\obj\Debug\net8.0\ref\ConvenienceStoreBusinessObject.dll

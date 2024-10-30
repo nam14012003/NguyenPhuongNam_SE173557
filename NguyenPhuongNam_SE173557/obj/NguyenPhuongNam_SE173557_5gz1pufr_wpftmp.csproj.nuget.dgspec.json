@@ -1,0 +1,285 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\NguyenPhuongNam_SE173557\\NguyenPhuongNam_SE173557\\NguyenPhuongNam_SE173557.csproj": {}
+  },
+  "projects": {
+    "D:\\NguyenPhuongNam_SE173557\\ConvenienceStoreBusinessObject\\ConvenienceStore_BusinessObject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NguyenPhuongNam_SE173557\\ConvenienceStoreBusinessObject\\ConvenienceStore_BusinessObject.csproj",
+        "projectName": "ConvenienceStore_BusinessObject",
+        "projectPath": "D:\\NguyenPhuongNam_SE173557\\ConvenienceStoreBusinessObject\\ConvenienceStore_BusinessObject.csproj",
+        "packagesPath": "C:\\Users\\namng\\.nuget\\packages\\",
+        "outputPath": "D:\\NguyenPhuongNam_SE173557\\ConvenienceStoreBusinessObject\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\namng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\namng\\.nuget\\packages": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NguyenPhuongNam_SE173557\\ConvenienceStoreDAO\\ConvenienceStore_DAO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NguyenPhuongNam_SE173557\\ConvenienceStoreDAO\\ConvenienceStore_DAO.csproj",
+        "projectName": "ConvenienceStore_DAO",
+        "projectPath": "D:\\NguyenPhuongNam_SE173557\\ConvenienceStoreDAO\\ConvenienceStore_DAO.csproj",
+        "packagesPath": "C:\\Users\\namng\\.nuget\\packages\\",
+        "outputPath": "D:\\NguyenPhuongNam_SE173557\\ConvenienceStoreDAO\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\namng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\namng\\.nuget\\packages": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\NguyenPhuongNam_SE173557\\ConvenienceStoreBusinessObject\\ConvenienceStore_BusinessObject.csproj": {
+                "projectPath": "D:\\NguyenPhuongNam_SE173557\\ConvenienceStoreBusinessObject\\ConvenienceStore_BusinessObject.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NguyenPhuongNam_SE173557\\ConvenienceStoreRepo\\ConvenienceStore_Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NguyenPhuongNam_SE173557\\ConvenienceStoreRepo\\ConvenienceStore_Repository.csproj",
+        "projectName": "ConvenienceStore_Repository",
+        "projectPath": "D:\\NguyenPhuongNam_SE173557\\ConvenienceStoreRepo\\ConvenienceStore_Repository.csproj",
+        "packagesPath": "C:\\Users\\namng\\.nuget\\packages\\",
+        "outputPath": "D:\\NguyenPhuongNam_SE173557\\ConvenienceStoreRepo\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\namng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\namng\\.nuget\\packages": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\NguyenPhuongNam_SE173557\\ConvenienceStoreDAO\\ConvenienceStore_DAO.csproj": {
+                "projectPath": "D:\\NguyenPhuongNam_SE173557\\ConvenienceStoreDAO\\ConvenienceStore_DAO.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NguyenPhuongNam_SE173557\\NguyenPhuongNam_SE173557\\NguyenPhuongNam_SE173557.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NguyenPhuongNam_SE173557\\NguyenPhuongNam_SE173557\\NguyenPhuongNam_SE173557.csproj",
+        "projectName": "NguyenPhuongNam_SE173557",
+        "projectPath": "D:\\NguyenPhuongNam_SE173557\\NguyenPhuongNam_SE173557\\NguyenPhuongNam_SE173557.csproj",
+        "packagesPath": "C:\\Users\\namng\\.nuget\\packages\\",
+        "outputPath": "D:\\NguyenPhuongNam_SE173557\\NguyenPhuongNam_SE173557\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\namng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\namng\\.nuget\\packages": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\NguyenPhuongNam_SE173557\\ConvenienceStoreRepo\\ConvenienceStore_Repository.csproj": {
+                "projectPath": "D:\\NguyenPhuongNam_SE173557\\ConvenienceStoreRepo\\ConvenienceStore_Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

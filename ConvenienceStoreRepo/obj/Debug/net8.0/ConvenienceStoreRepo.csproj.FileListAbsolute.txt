@@ -1,0 +1,17 @@
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreRepo\bin\Debug\net8.0\ConvenienceStoreRepo.deps.json
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreRepo\bin\Debug\net8.0\ConvenienceStoreRepo.dll
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreRepo\bin\Debug\net8.0\ConvenienceStoreRepo.pdb
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreRepo\obj\Debug\net8.0\ConvenienceStoreRepo.GeneratedMSBuildEditorConfig.editorconfig
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreRepo\obj\Debug\net8.0\ConvenienceStoreRepo.AssemblyInfoInputs.cache
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreRepo\obj\Debug\net8.0\ConvenienceStoreRepo.AssemblyInfo.cs
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreRepo\obj\Debug\net8.0\ConvenienceStoreRepo.csproj.CoreCompileInputs.cache
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreRepo\obj\Debug\net8.0\ConvenienceStoreRepo.dll
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreRepo\obj\Debug\net8.0\refint\ConvenienceStoreRepo.dll
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreRepo\obj\Debug\net8.0\ConvenienceStoreRepo.pdb
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreRepo\obj\Debug\net8.0\ref\ConvenienceStoreRepo.dll
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreRepo\obj\Debug\net8.0\ConvenienceStoreRepo.csproj.AssemblyReference.cache
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreRepo\bin\Debug\net8.0\ConvenienceStoreBusinessObject.dll
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreRepo\bin\Debug\net8.0\ConvenienceStoreDAO.dll
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreRepo\bin\Debug\net8.0\ConvenienceStoreDAO.pdb
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreRepo\bin\Debug\net8.0\ConvenienceStoreBusinessObject.pdb
+D:\NguyenPhuongNam_SE173557\ConvenienceStoreRepo\obj\Debug\net8.0\Convenie.E4AC1796.Up2Date

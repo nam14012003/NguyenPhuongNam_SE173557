@@ -1,0 +1,339 @@
+﻿<Window x:Class="NguyenPhuongNam_SE173557.ProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="Product Management" Height="800" Width="1200" 
+        WindowStyle="None" 
+        ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+
+
+    <Window.Resources>
+        <LinearGradientBrush x:Key="HeaderGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#8E2DE2" Offset="0"/>
+            <GradientStop Color="#4A00E0" Offset="1"/>
+        </LinearGradientBrush>
+
+        <Style x:Key="ModernButton" TargetType="Button">
+            <Setter Property="Height" Value="45"/>
+            <Setter Property="Width" Value="140"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="23" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Border CornerRadius="20" Background="#F0F2F5">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Header with Gradient -->
+            <Border Grid.Row="0" Background="{StaticResource HeaderGradient}" CornerRadius="20,20,0,0">
+                <Grid>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Path Data="M12,3L2,12H5V20H19V12H22L12,3M12,7.7L16.3,12H15V18H9V12H7.7L12,7.7Z" 
+                              Fill="White" Width="30" Height="30" Margin="0,0,15,0"
+                              Stretch="Uniform"/>
+                        <TextBlock Text="Product Management System" 
+                                 FontSize="32" 
+                                 FontWeight="Bold" 
+                                 Foreground="White"/>
+                    </StackPanel>
+                    <Button Content="✕" 
+                            HorizontalAlignment="Right" 
+                            VerticalAlignment="Top" 
+                            Margin="20"
+                            Width="40" 
+                            Height="40"
+                            Background="#FF4081"
+                            Foreground="White"
+                            BorderThickness="0"
+                            Click="btnClose_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="20" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </Grid>
+            </Border>
+
+            <!-- Form Content in Cards -->
+            <WrapPanel Grid.Row="1" Margin="20,20,20,0">
+                <!-- Left Card -->
+                <Border Background="White" 
+                        CornerRadius="15" 
+                        Width="560"
+                        Margin="0,0,10,0" Height="412"
+                       >
+                    <StackPanel Margin="25">
+                        <TextBlock Text="Product Information" 
+                                 FontSize="24" 
+                                 FontWeight="Bold" 
+                                 Foreground="#333333"
+                                 Margin="0,0,0,5"/>
+
+                        <Label Content="Product ID" FontWeight="SemiBold" Foreground="#666666"/>
+                        <TextBox x:Name="txtProductId"
+                                 Height="40" 
+                                 Margin="0,5,0,15"
+                                 BorderThickness="0,0,0,2"
+                                 BorderBrush="#E0E0E0"
+                                 FontSize="14"
+                                 Padding="5,8"/>
+
+                        <Label Content="Product Name" FontWeight="SemiBold" Foreground="#666666"/>
+                        <TextBox x:Name="txtProductName"
+                                 Height="40" 
+                                 Margin="0,5,0,15"
+                                 BorderThickness="0,0,0,2"
+                                 BorderBrush="#E0E0E0"
+                                 FontSize="14"
+                                 Padding="5,8"/>
+
+                        <Label Content="Price" FontWeight="SemiBold" Foreground="#666666"/>
+                        <TextBox x:Name="txtPrice"
+                                 Height="40" 
+                                 Margin="0,5,0,15"
+                                 BorderThickness="0,0,0,2"
+                                 BorderBrush="#E0E0E0"
+                                 FontSize="14"
+                                 Padding="5,8"/>
+
+                        <Label Content="Vendor" FontWeight="SemiBold" Foreground="#666666"/>
+                        <ComboBox x:Name="cmbVendor"
+                                  Height="40" 
+                                  Margin="0,5,0,15"
+                                  BorderThickness="0,0,0,2"
+                                  BorderBrush="#E0E0E0"
+                                  FontSize="14"
+                                  Padding="5,8"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- Right Card -->
+                <Border Background="White" 
+                        CornerRadius="15" 
+                        Width="560"
+                        Margin="10,0,0,0" Height="407"
+                       >
+                    <StackPanel Margin="25">
+                        <TextBlock Text="Additional Details" 
+                                 FontSize="24" 
+                                 FontWeight="Bold" 
+                                 Foreground="#333333"
+                                 Margin="0,0,0,5"/>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                                <Label Content="Manufacture Date" FontWeight="SemiBold" Foreground="#666666"/>
+                                <DatePicker x:Name="dpManufactureDate"
+                                    Height="40" 
+                                    Margin="0,5,0,15"
+                                    BorderThickness="0,0,0,2"
+                                    BorderBrush="#E0E0E0"
+                                    FontSize="14"
+                                    SelectedDateChanged="dpManufactureDate_SelectedDateChanged"
+                                    DisplayDateStart="{x:Static sys:DateTime.Now}"/>            
+                            </StackPanel>
+
+                            <StackPanel Grid.Column="1" Margin="10,0,0,0">
+                                <Label Content="Expiry Date" FontWeight="SemiBold" Foreground="#666666"/>
+                                <DatePicker x:Name="dpExpiryDate"
+                                          Height="40" 
+                                          Margin="0,5,0,15"
+                                          BorderThickness="0,0,0,2"
+                                          BorderBrush="#E0E0E0"
+                                          FontSize="14"
+                                          SelectedDateChanged="dpExpiryDate_SelectedDateChanged"
+                                          DisplayDateStart="{x:Static sys:DateTime.Now}"/>  
+                            </StackPanel>
+                        </Grid>
+
+                        <Label Content="Quantity" FontWeight="SemiBold" Foreground="#666666"/>
+                        <TextBox x:Name="txtQuantity"
+                                 Height="40" 
+                                 Margin="0,5,0,15"
+                                 BorderThickness="0,0,0,2"
+                                 BorderBrush="#E0E0E0"
+                                 FontSize="14"
+                                 Padding="5,8"/>
+
+                        <Label Content="Description" FontWeight="SemiBold" Foreground="#666666"/>
+                        <TextBox x:Name="txtDescription"
+                                 Height="112" 
+                                 Margin="0,5,0,15"
+                                 BorderThickness="0,0,0,2"
+                                 BorderBrush="#E0E0E0"
+                                 FontSize="14"
+                                 TextWrapping="Wrap"
+                                 AcceptsReturn="True"
+                                 VerticalScrollBarVisibility="Auto"
+                                 Padding="5,8"/>
+                    </StackPanel>
+                </Border>
+            </WrapPanel>
+
+            <!-- DataGrid -->
+            <Border Grid.Row="2" 
+                    Background="White" 
+                    CornerRadius="15" 
+                    Margin="20,20,20,70" Grid.RowSpan="2">
+                <DataGrid x:Name="dtgProducts"
+                          Margin="0,0,2,0"
+                          AutoGenerateColumns="False"
+                          IsReadOnly="True"
+                          BorderThickness="0"
+                          Background="Transparent"
+                          RowBackground="White"
+                          AlternatingRowBackground="#F8F9FA"
+                          GridLinesVisibility="None"
+                          VerticalScrollBarVisibility="Auto" SelectionChanged="dtgProducts_SelectionChanged">
+                    <DataGrid.Resources>
+                        <Style x:Key="HeaderStyle" TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="#4A00E0"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Padding" Value="15,12"/>
+                            <Setter Property="FontWeight" Value="SemiBold"/>
+                            <Setter Property="BorderThickness" Value="0"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        </Style>
+                    </DataGrid.Resources>
+
+                    <DataGrid.ColumnHeaderStyle>
+                        <StaticResource ResourceKey="HeaderStyle"/>
+                    </DataGrid.ColumnHeaderStyle>
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding ProductId}" Width="50">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Header="Product Name" Binding="{Binding ProductName}" Width="150">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Header="Price" Binding="{Binding Price}" Width="100">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="150">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="*">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Header="Manufacture Date" Binding="{Binding ManufactureDate}" Width="150">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Header="Expiry Date" Binding="{Binding ExpiredDate}" Width="150">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Header="Vendor ID" Binding="{Binding Vendor.VendorId}" Width="100">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Header="Vendor Name" Binding="{Binding Vendor.VendorName}" Width="*">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                    </DataGrid.Columns>
+
+
+                </DataGrid>
+            </Border>
+
+            <!-- Action Buttons -->
+            <StackPanel Grid.Row="3" 
+                        Orientation="Horizontal" 
+                        HorizontalAlignment="Center" 
+                        Margin="0,40,0,0">
+                <Button x:Name="btnAdd" Style="{StaticResource ModernButton}"
+                        Content="Add New"
+                        Background="#4CAF50"
+                        Click="btnAdd_Click" Foreground="Black"/>
+
+                <Button x:Name="btnUpdate" Style="{StaticResource ModernButton}"
+                        Content="Update"
+                        Background="#2196F3"
+                        Click="btnUpdate_Click" Foreground="Black"/>
+
+                <Button x:Name="btnDelete" Style="{StaticResource ModernButton}"
+                        Content="Delete"
+                        Background="#F44336"
+                        Click="btnDelete_Click" Foreground="Black"/>
+
+                <Button x:Name="btnSearch" Style="{StaticResource ModernButton}"
+                        Content="Search"
+                        Background="#FF9800" Click="ButtonSearch_Click" Foreground="Black"/>
+
+                <Button x:Name="btnClear" Style="{StaticResource ModernButton}"
+                        Content="Clear"
+                        Background="#FF9800" Click="ButtonClear_Click" Foreground="Black"/>
+
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>
